@@ -145,8 +145,6 @@ app.get('/v1/credits/packages', (req, res) => {
     .map(p => ({ id: p.id, name: p.name, credits: p.credits, amountHuf: p.amountHuf }));
   res.json({ packages: safe });
 });
-  res.json({ packages: safe });
-});
 
 // Auth - user register
 app.post('/v1/auth/register', async (req, res) => {
